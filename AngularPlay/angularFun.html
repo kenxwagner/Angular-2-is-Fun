@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="app1" ng-init="person = {fName: 'Ken', lName: 'GW'}; capitals = [{city: 'Kennewick', state:'Washington'},
+{city:'Portland', state: 'Oregon'}, {city: 'Boise', state: 'Arizona'}]">
+  <head>
+    <title>Building Sites in AngularJS is fun</title>
+  </head>
+  <body>
+    <div ng-controller="ctrl1">
+
+      <span> Values:</span>
+      <input type="text" ng-model="first" />
+      <input type="text" ng-model="second" />
+
+      <button ng-click="updateValue()">Sum</button>
+      <br><br>
+      {{calculation}}
+      <p>12 + 8 = {{12+8}}</p>
+    </div>
+
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js">
+    </script>
+    <script src="js/exam1.js"></script>
+  </body>
+</html>
